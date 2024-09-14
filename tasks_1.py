@@ -50,6 +50,10 @@ average_grade = sum(students.values()) / len(students)
 print(average_grade)
 
 # 9.task
+# Создайте множество чисел и удалите из него все чётные числа.
+numbers_set = {1, 2, 3, 4, 5, 6, 7, 8}
+numbers_set = {num for num in numbers_set if num % 2 != 0}
+print(numbers_set)
 
 # 10.task
 
