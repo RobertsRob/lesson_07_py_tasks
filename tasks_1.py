@@ -18,10 +18,24 @@ age = people.get("Bob")
 print(age)
 
 # 4.task
+# Создайте два множества и найдите их пересечение.
+set1 = {1, 2, 3, 4}
+set2 = {3, 4, 5, 6}
+intersection = set1.intersection(set2)
+print(intersection)
 
 # 5.task
+# Создайте два множества и найдите их объединение.
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+union_set = set1.union(set2)
+print(union_set)
 
 # 6.task
+# Создайте кортеж с числами и проверьте, являются ли все числа в кортеже положительными.
+numbers = (3, 5, 8, 10)
+all_positive = all(n > 0 for n in numbers)
+print(all_positive)
 
 # 7.task
 
