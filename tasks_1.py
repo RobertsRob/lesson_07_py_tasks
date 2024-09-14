@@ -56,8 +56,17 @@ numbers_set = {num for num in numbers_set if num % 2 != 0}
 print(numbers_set)
 
 # 10.task
+# Создайте кортеж с числами и отсортируйте его по убыванию, удалив при этом дубликаты. Вывести надо кортеж.
+numbers = (4, 7, 2, 7, 3, 9, 4)
+unique_sorted_numbers = tuple(sorted(set(numbers), reverse=True))
+print(unique_sorted_numbers)
 
 # 11.task
+# Создайте множество строк, оставьте только те строки, которые начинаются с гласной буквы.
+words_set = {"apple", "banana", "orange", "grape", "avocado"}
+vowels = {"a", "e", "i", "o", "u"}
+filtered_set = {word for word in words_set if word[0].lower() in vowels}
+print(filtered_set)
 
 # 12.task
 
