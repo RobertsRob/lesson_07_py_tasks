@@ -38,9 +38,16 @@ all_positive = all(n > 0 for n in numbers)
 print(all_positive)
 
 # 7.task
-# Создайте словарь с названиями фильмов и их рейтингами. Найдите фильм с самым высоким рейтингом.
+# Создайте кортеж с числами и найдите индекс числа 7.
+numbers = (1, 3, 7, 9, 7, 11)
+index_of_seven = numbers.index(7)
+print(index_of_seven)
 
 # 8.task
+# Создайте словарь с именами студентов и их оценками. Найдите среднюю оценку.
+students = {"Alice": 85, "Bob": 90, "Charlie": 88}
+average_grade = sum(students.values()) / len(students)
+print(average_grade)
 
 # 9.task
 
