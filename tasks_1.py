@@ -69,6 +69,10 @@ filtered_set = {word for word in words_set if word[0].lower() in vowels}
 print(filtered_set)
 
 # 12.task
+# Создайте кортеж с несколькими числами, проверьте, являются ли все числа в кортеже нечётными.
+numbers = (1, 3, 5, 7, 9)
+all_odd = all(num % 2 != 0 for num in numbers)
+print(all_odd)
 
 # 13.task
 
