@@ -38,6 +38,7 @@ all_positive = all(n > 0 for n in numbers)
 print(all_positive)
 
 # 7.task
+# Создайте словарь с названиями фильмов и их рейтингами. Найдите фильм с самым высоким рейтингом.
 
 # 8.task
 
