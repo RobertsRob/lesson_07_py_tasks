@@ -74,8 +74,37 @@ numbers = (1, 3, 5, 7, 9)
 all_odd = all(num % 2 != 0 for num in numbers)
 print(all_odd)
 
-# 13.task
+# 13.task *
+# Создайте словарь с именами сотрудников и их заработной платой. Найдите сотрудников, чьи зарплаты выше среднего, и выведите их имена с процентной разницей относительно средней зарплаты.
+employees = {"John": 50000, "Sara": 70000, "Mike": 55000, "Anna": 80000, "Tom": 45000}
 
-# 14.task
+average_salary = sum(employees.values()) / len(employees)
+above_average = {}
 
-# 15.task
+for name, salary in employees.items():
+    if salary > average_salary:
+        percentage_difference = ((salary - average_salary) / average_salary) * 100
+        above_average[name] = percentage_difference
+
+print(f"Средняя зарплата: {average_salary}")
+for name, diff in above_average.items():
+    print(f"{name} получает на {diff:.2f}% больше средней зарплаты.")
+
+# 14.task *
+# Создайте словарь, где ключами будут имена студентов, а значениями — их оценки за несколько предметов (список). Посчитайте среднюю оценку каждого студента и выведите имена студентов, у которых средняя оценка выше 70.
+students = {
+    "Alice": [85, 90, 78],
+    "Bob": [60, 65, 70],
+    "Charlie": [90, 92, 88],
+    "Dave": [50, 55, 60]
+}
+
+above_average_students = {}
+
+for name, grades in students.items():
+    average_grade = sum(grades) / len(grades)
+    if average_grade > 70:
+        above_average_students[name] = average_grade
+
+for name, avg_grade in above_average_students.items():
+    print(f"{name} имеет среднюю оценку {avg_grade:.2f}, что выше 70.")
