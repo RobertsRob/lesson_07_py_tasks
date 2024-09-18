@@ -23,3 +23,8 @@ result = concat("Hello", "World")
 print(result)
 
 # 5.task
+# Используя lambda, преобразуйте список чисел в строки.
+numbers = [1, 2, 3, 4, 5]
+to_string = lambda x: str(x)
+string_numbers = [to_string(num) for num in numbers]
+print(string_numbers)
