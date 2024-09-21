@@ -31,7 +31,7 @@ result = list(map(create_dict, numbers))
 print(result)
 
 # 6.task
-# Создайте список кортежей, где каждый кортеж содержит строку и её длину. Используйте map для создания этого списка из списка строк.
+# Создайте список кортежей, где каждый кортеж содержит строку и её длину из списка со стоками. Используйте map для создания этого списка из списка строк.
 strings = ["apple", "banana", "cherry"]
 get_length_tuple = lambda s: (s, len(s))
 result = list(map(get_length_tuple, strings))
